@@ -12,6 +12,6 @@ const firebaseConfig = {
   measurementId: "G-ETP1BX25J2",
 };
 
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
+export const firebaseApp = initializeApp(firebaseConfig);
 
-export default app

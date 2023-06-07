@@ -40,7 +40,7 @@
 <script>
   import { ref } from 'vue'
   import { useField, useForm } from 'vee-validate'
-  import app from "../firebase";
+  import { app } from "../firebase";
   import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut, getRedirectResult, GoogleAuthProvider, signInWithPopup } from "firebase/auth"
 
   const auth = getAuth(app)

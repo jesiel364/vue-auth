@@ -40,7 +40,7 @@
   import { ref } from 'vue'
   import { useField, useForm } from 'vee-validate'
   import { getAuth, createUserWithEmailAndPassword } from "firebase/auth"
-  import app from "../firebase";
+  import { app } from "../firebase";
 
   export default {
     setup () {

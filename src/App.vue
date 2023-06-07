@@ -3,24 +3,7 @@ import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import { ref } from 'vue'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
-import app from '@/firebase'
 
-const auth = getAuth(app)
-function verify(){
-  			onAuthStateChanged(auth, (user) => {
-  if (user) {
-    const uid = user.uid;
-    this.logado = true
-    alert("Logado")
-
-  } else {
-    this.logado = false
-    alert("Não logado")
-  }
-});
-  		}
-
-verify()
 
 
 </script>
